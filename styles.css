@@ -1,0 +1,327 @@
+* {
+    padding-left: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    background: #f0f8ff;
+ 
+}
+@media screen and (max-width: 992px) {
+    header{
+        height: 200px;
+        padding-bottom: 50px;
+    }
+    .content{
+        border-top: 300px;
+    }
+    
+    }
+
+    .logo {
+      position: absolute;
+      font-size: .50rem;
+    }
+    .nav-bar ul{
+        padding-top: 150px;
+       
+    }
+  
+.bar{
+    position: fixed;
+}
+.recipe-page{
+    padding-top: 120px;
+    padding-left: 30px;
+}
+.recipe-list{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+.hero{
+   height: 90vh;
+   width: 100%;
+   background-image: url(https://live.staticflickr.com/65535/53689730570_0dfc2d94af_z.jpg);
+   opacity: 0.8;
+   background-position: center;
+   background-size: cover; 
+
+}
+.credits{
+    padding-top: 690px;
+    padding-left: 1170px;
+    color: white;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #ed872d;
+    margin-right: 40px;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+.nav-bar ul li a{
+    display: block;
+    color: #ed872d;
+    font-size: 20px;
+    padding: 8px 25px;
+    transition: .2s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.nav-bar ul li:hover a{
+    background-color: #97a2a3;
+    color: #213032;
+    cursor: pointer;
+}    
+.content{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: #ff2800;
+    font-size: 75px;
+    margin: 20px 0px 20px;
+}
+h3{
+    color: black;
+    font-size: 25px;
+    margin-bottom: 50px;
+
+    h4{
+        color: #edffef;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+}
+.button{
+    position: absolute;
+    background-color: #ff2800;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 13px 30px;
+    transform: .4s;
+}
+.button:hover{
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;   
+}
+.about{
+    width: 100%;
+    padding: 119px 0px;
+    background-color: #314e52;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about h2{
+    color:#edffef;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about-text p{
+    color: #97a2a3;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 214px;
+    
+
+}
+.about-text{
+    width: 900px;
+    
+}
+/*Recipe Section CSS*/
+.recipe{
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #213032;
+}
+.recipe h2{
+    color: #edffef;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.box .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.box .card .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: #edffef;
+    color: #182f32;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.box .card:hover .content{
+    opacity: 1;
+}
+.card h3{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #213032;
+}
+.box .card p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.box .card button{
+    position:relative;
+    background-color: #ed872d;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    transform:.4s;
+    padding: 13px 30px;
+ }
+ .box .card button:hover{
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;
+ }
+ /*Categories*/
+ .categories{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #314e52;
+ }
+ .categories h2{
+    color:#edffef;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+ }
+ .ca-card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+ }
+ .box .ca-card .content{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 15px;
+    background-color: #edffef;
+    color: #182f32;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+ }
+ .box .ca-card:hover .content{
+    opacity: 1;
+ }
+ .ca-card h3{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #213032;
+ }
+.box .ca-card p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.box .ca-card button{
+    position:relative;
+    background-color: #ed872d;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    transform:.4s;
+    padding: 13px 30px;
+}
+.box .ca-card button a{
+    color: white;
+}
+.box .ca-card button:hover{
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.box .ca-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    padding: 20px 0;
+    padding-left: 20px;
+    background: #182f32;
+}
+footer h5{
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    color: #97a2a3;
+}
